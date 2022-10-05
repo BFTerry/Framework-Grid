@@ -2,8 +2,49 @@
     width: 100%;
     height: 100vh;
     background-color: red;
+    display: flex;
+    justify-content: center;
 }
 
 .grid {
+    width: 80%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
+    padding: 20px 40px;
+}
+
+.item {
+    background-color: green;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--textSize);
+    height: 40vh;
+}
+
+@media only screen and (width: 768px) {
+    
+    .grid {
+        grid-template-rows: 100%;
+        grid-auto-flow: row;
+    }
+    
     
 }
+
+
+
+@media only screen and (width: 375px) {
+    
+    .grid {
+        grid-template-rows: 100%;
+        grid-auto-flow: row;
+    }
+    
+}
+
