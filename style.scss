@@ -27,10 +27,10 @@
     height: 40vh;
 }
 
-@media only screen and (width: 768px) {
+@media only screen and (max-width: 768px) {
     
     .grid {
-        grid-template-rows: 100%;
+        grid-template-rows: auto;
         grid-auto-flow: row;
     }
     
@@ -39,10 +39,10 @@
 
 
 
-@media only screen and (width: 375px) {
+@media only screen and (max-width: 375px) {
     
     .grid {
-        grid-template-rows: 100%;
+        grid-template-rows: auto;
         grid-auto-flow: row;
     }
     
